@@ -19,4 +19,4 @@ ____
 Material Design Colors 2.1.4
 Material Design Themes 4.9.0
 
-And also Microsoft.Xmal.Behaviors.Wpf
+And also Microsoft.Xmal.Behaviors.Wpf 1.1.39
