@@ -1,0 +1,17 @@
+﻿<Window x:Class="Olympiads.Заявки"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olympiads"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Добавление заявки" Height="340" Width="300" Icon="/MainIcon.png" WindowStartupLocation="CenterScreen" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStyle="ToolWindow" ResizeMode="NoResize" Closed="Window_Closed">
+    <Grid>
+        <Label x:Name="mainLabel" Content="Добавление" HorizontalAlignment="Center" Margin="0,35,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <ComboBox x:Name="comboTeacher" HorizontalAlignment="Center" Margin="0,80,0,0" materialDesign:HintAssist.Hint="Выберите преподователя" VerticalAlignment="Top" Width="250" Style="{StaticResource MaterialDesignComboBox}" SelectionChanged="comboTeacher_SelectionChanged"/>
+        <ComboBox HorizontalAlignment="Center" x:Name="comboEvent" Margin="0,137,0,0" VerticalAlignment="Top" Width="250" materialDesign:HintAssist.Hint="Выберите мероприятие" Style="{StaticResource MaterialDesignComboBox}"/>
+        <DatePicker x:Name="pickerStartDate" HorizontalAlignment="Center" Margin="0,184,0,0" VerticalAlignment="Top" Width="250" Style="{StaticResource MaterialDesignDatePicker}" materialDesign:HintAssist.Hint="Выберите дату подачи"/>
+        <Button x:Name="mainButton" Content="Добавить" HorizontalAlignment="Center" Margin="0,229,0,0" VerticalAlignment="Top" Width="250" Click="mainButton_Click"/>
+    </Grid>
+</Window>
